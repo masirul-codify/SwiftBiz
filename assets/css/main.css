@@ -1,0 +1,305 @@
+/**
+  * Template Name: SwiftBiz
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://devmasirul.com/SwiftBiz-bootstrap-business-website-template/
+  * Author: devmasirul.com
+  * License: https://devmasirul.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Set main reusable colors and fonts using CSS variables
+# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Manrope:wght@400;600;800&family=Teko:wght@400;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+:root{
+  --primary-color:#ED3B3B;
+}
+/* Genaral */
+section{
+  margin-top: 65px!important;
+  margin-bottom: 65px!important;
+}
+
+/* End Genaral */
+
+.hero-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-image {
+  background-image: url('../images/logo-icon/Mask\ group.png');/* Specify the path to your hero image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Send the background image to the back */
+}
+
+.bg-image-1 {
+  background-image: url('../images/logo-icon/shap.png');/* Specify the path to your hero image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Send the background image to the back */
+}
+.bg-image-2 {
+  background-image: url('../images/logo-icon/Vector.png');/* Specify the path to your hero image */  
+
+  background-size: 300px 300px; /* Adjust width and height as needed */
+  background-position: center;  
+  background-repeat: no-repeat;
+  position: absolute; /* Fixed positioning */
+  bottom: 0; /* Place at the bottom */
+  right: 0; /* Place at the right */
+  width: 20%; /* Adjust the width of the background image */
+  height: 40%; /* Adjust the height of the background image */
+  z-index: -1; /* Set a z-index if needed */
+}
+.topbar {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* topbar start */
+.web-info .icon i{
+  color: var(--primary-color);
+}
+.web-info .icon-text p{
+  font-family: 'Manrope',sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+.web-info .icon-text h6{
+  font-family: 'Teko',sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+/* topbar end */
+.navbar {
+  background: #FFFFFF;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.hero-content {
+  position: absolute;
+  top: 60%!important;
+  left: 55%!important;
+  transform: translate(-58%,-40%);
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+/* navbar  */
+.nav-link{
+font-family: 'Manrope',sans-serif;
+font-size: 16px;
+font-weight: 800;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: #151515;
+padding-left: 30px!important;
+}
+.nav-link:hover{
+color: var(--primary-color);
+}
+.active{
+  color: var(--primary-color)!important;
+}
+.button{
+  padding: 10px 50px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+}
+
+/* hero contetn */
+.hero-content h6{
+font-family: 'Teko',sans-serif;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 1.05em;
+text-align: left;
+}
+.hero-content h1{
+  font-family: 'Teko',sans-serif;
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 110px;
+  letter-spacing: 0em;
+  text-align: left;  
+}
+.highlight{
+  color: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer{
+  position: relative;
+  height: 55vh;
+  overflow: hidden;
+}
+
+
+@media only screen and (max-width: 800px){
+  .footer{
+    position: relative;
+    height: 120vh;
+    overflow: hidden;
+  }
+  
+}
+.footer .footer-bg-image{
+  background-image: url('../images/map2.png');/* Specify the path to your hero image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Send the background image to the back */
+}
+
+.footer .footer-area .footer-info h3{
+  font-family: 'Teko',sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  
+}
+
+.footer .footer-area .footer-info h6{
+  font-family: 'Teko',sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0.15em;
+  text-align: left;
+  color: #fff;
+}
+
+.footer .footer-area .footer-info i{
+ color: #fff;
+}
+
+.footer-links h3{
+font-family: 'Teko',sans-serif;
+font-size: 30px;
+font-weight: 400;
+line-height: 35px;
+letter-spacing: 0em;
+text-align: left;
+color: #fff;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0; /* Optional: Remove default padding on the list */
+  }
+.footer-links ul li a{
+  font-family: 'Manrope',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  text-decoration:none;
+  }
+
+
+  .footer-contact h5{
+    font-family: 'Manrope',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ED3B3B;
+    }
+  
+
+
+  .footer-contact h4{
+    font-family: 'Teko',sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    }
+  
+
+
+  .footer-contact h3{
+  font-family: 'Teko',sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  }
+
+  .footer-contact  h6{
+    font-family: 'Manrope',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    text-decoration:none;
+    }

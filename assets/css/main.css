@@ -11,7 +11,6 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Manrope:wght@400;600;800&family=Teko:wght@400;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -157,7 +156,7 @@ color: var(--primary-color);
   text-transform: uppercase;
 }
 
-/* hero contetn */
+/* hero content */
 .hero-content h6{
 font-family: 'Teko',sans-serif;
 font-size: 20px;
@@ -176,6 +175,91 @@ text-align: left;
 }
 .highlight{
   color: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+# Service area
+--------------------------------------------------------------*/
+.service .title p{
+  font-family: 'Teko',sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #ED3B3B;
+}
+
+.service .sub-title h2{
+  font-family: 'Teko',sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #151515;
+}
+.service-card{
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0% 30%)!important;
+  background-color: #E3DBD8;
+  width: 18rem;
+  gap: 20px!important
+}
+.card-content{
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0% 30%)!important;
+  margin: .3px;
+  background-color: #fff;
+}
+
+.service .icon{
+  background: var(--primary-color);
+  padding: 10px 15px;  
+  margin-top: 5%;
+}
+
+.service .card-content .card-text h3{
+  font-family: 'Teko',sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 0;
+  color: black;
+}
+
+.service .card-content .card-text p{
+  font-family: 'Manrope',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 0px 35px;
+  overflow: hidden;
+  color: #666666;
+}
+
+.s-bottom-text 
+.s-highlight{
+  font-family: 'Manrope',sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color : var(--primary-color);
+}
+
+.s-bottom-text p{
+  font-family: 'Manrope',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color : #151515;
 }
 
 /*--------------------------------------------------------------

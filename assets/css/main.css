@@ -28,6 +28,27 @@ section{
   margin-bottom: 65px!important;
 }
 
+
+.title p{
+  font-family: 'Teko',sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #ED3B3B;
+}
+
+.sub-title h2{
+  font-family: 'Teko',sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #151515;
+}
 /* End Genaral */
 
 .hero-container {
@@ -59,20 +80,20 @@ section{
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1; /* Send the background image to the back */
+  z-index: -1; 
 }
 .bg-image-2 {
-  background-image: url('../images/logo-icon/Vector.png');/* Specify the path to your hero image */  
+  background-image: url('../images/logo-icon/Vector.png');
 
-  background-size: 300px 300px; /* Adjust width and height as needed */
+  background-size: 300px 300px; 
   background-position: center;  
   background-repeat: no-repeat;
-  position: absolute; /* Fixed positioning */
-  bottom: 0; /* Place at the bottom */
-  right: 0; /* Place at the right */
-  width: 20%; /* Adjust the width of the background image */
-  height: 40%; /* Adjust the height of the background image */
-  z-index: -1; /* Set a z-index if needed */
+  position: absolute; 
+  bottom: 0; 
+  right: 0; 
+  width: 20%; 
+  height: 40%; 
+  z-index: -1; 
 }
 .topbar {
   color: #fff;
@@ -180,26 +201,7 @@ text-align: left;
 /*--------------------------------------------------------------
 # Service area
 --------------------------------------------------------------*/
-.service .title p{
-  font-family: 'Teko',sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.1em;
-  text-align: center;
-  color: #ED3B3B;
-}
 
-.service .sub-title h2{
-  font-family: 'Teko',sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 60px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin-bottom: 60px;
-  color: #151515;
-}
 .service-card{
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0% 30%)!important;
   background-color: #E3DBD8;
@@ -262,6 +264,91 @@ text-align: left;
   color : #151515;
 }
 
+
+/*--------------------------------------------------------------
+# History area
+--------------------------------------------------------------*/
+.history{
+  background: linear-gradient(to right, rgba(237, 59, 59, 0.72), rgba(0, 0, 0, 0.7)), url('../images/history/Rectangle\ 12.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px; /* Set the height or adjust as needed */
+  width: 100%; /* Set the width or adjust as needed */
+  top: 0;
+  left: 0;
+  z-index: -1; 
+  position: inherit;
+}
+
+.main-card{
+  /* position: absolute; */
+  display:  inline-block;
+  margin-top: 100px;
+}
+
+.history-card{
+ position: relative;
+ background: #FFFFFF;
+ z-index: 11;
+}
+
+.history-pattern{
+  background-image: url('../images/history/pattern.png');
+  background-size: cover; 
+  background-position: center;  
+  background-repeat: no-repeat;
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  width: 60%; 
+  height: 60%; 
+  z-index: 10; 
+}
+
+.feature{
+  padding: 10px 30px;
+  background: linear-gradient(to right, #F2EEEC, #fff);
+}
+
+.feature:hover .key{
+  color: var(--primary-color);
+}
+.key-feature{
+  margin-top: 10px;
+}
+.feature .icon{
+ font-size: 25px;
+ color: var(--primary-color)
+}
+.feature .key{
+font-family: 'Teko',sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 35px;
+letter-spacing: 0.1em;
+text-align: center;
+margin-left: 15px;
+color:#151515;
+}
+
+.history .icon .icn i{
+  font-size: 70px;
+  color: var(--primary-color);
+}
+.history .content p{
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.history-counter{
+  padding: 150px 20px;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

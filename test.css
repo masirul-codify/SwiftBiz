@@ -1,33 +1,28 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 100vh;
-    margin: 0;
-  }
-  
-  .container {
-    position: relative;
-    width: 100%;
-  }
-  
-  .card {
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Additional styling for your card */
-  }
-  
-  /* Additional styling for section1 and section2 if needed */
-  .section1, .section2 {
-    width: 100%;
-    padding: 20px;
-    background: #111;
-    /* Additional styling for sections */
-  }
-  
+
+.main-container {
+  position: relative;
+  height: 700px;
+  border: 1px solid #000;
+}
+
+.inner-div1, .inner-div2 {
+  position: absolute;
+  height: 300px;
+}
+
+.inner-div1 {
+  top: 140px;
+  left: 70px;
+  z-index: 2; /* Set z-index to ensure it's above other elements */
+}
+
+.inner-div2 {
+  right: 0px;
+  z-index: 1; /* Set z-index to ensure it's above other elements */
+}
+
+.other-container {
+  margin-top: 250px; /* Create some space for demonstration */
+  background-color: lightblue;
+  padding: 10px;
+}

@@ -651,7 +651,7 @@ h2.sec-title {
   letter-spacing: 0.1em;
   text-align: center;
   margin-right: 20px;
-  color: #f12222;
+  color: rgba(89, 39, 19, 0.992);
   text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,

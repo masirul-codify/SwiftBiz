@@ -387,9 +387,34 @@ color:#151515;
 }
 
 .history-counter{
-  padding-top: 150px ;
-  padding-bottom: 50px ;
+  padding-top: 290px ;
+  padding-bottom: 80px ;
 }
+.h-counter .icon i {
+  padding-right: 15px;
+  color: #fff;
+  font-size: 90px;
+}
+.h-counter .content .bold{
+  font-family: 'Teko';
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.h-counter .content .s-bold{
+  font-family: 'Teko';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #fff;
+}
+
 .c-left-image{
   right: 0;
   bottom: 0;
@@ -446,7 +471,7 @@ color:#151515;
   position: absolute;
   right: 0px;
   left: auto;
-  top: 30px;
+  top: 80px;
   z-index: 1; /* Set z-index to ensure it's above other elements */
 }
 

@@ -398,13 +398,67 @@ color:#151515;
   text-align: center;
 }
 
+/*--------------------------------------------------------------
+# Growth section start
+--------------------------------------------------------------*/
+.red-bold{
+  font-family: 'Teko';
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ED3B3B;
+}
 
+.growth-description{
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #666666;
+}
+.growth-icon .icon{
+  background: var(--primary-color);
+  padding: 25px;
+}
+.growth-icon .text h5{
+  font-family: 'Teko';
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #151515;
+}
+.growth-icon .text p{
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #666666;
+}
+.inner-div {
+  position: absolute;
+  right: 0px;
+  left: auto;
+  top: 30px;
+  z-index: 1; /* Set z-index to ensure it's above other elements */
+}
 
+.bg{
+  background: var(--primary-color);
+  border-radius: 50%;
+}
 /*--------------------------------------------------------------
 # Project section start
 --------------------------------------------------------------*/
 :root {
-  --theme-color: #FE6809;
+  --theme-color: #ED3B3B;
   --white-color: #fff;
   --secondary-color: #1F1F1F;
 }
@@ -419,7 +473,7 @@ color:#151515;
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0.3em;
-    color: #FE6809;
+    color: #ED3B3B;
 }
 
 
@@ -452,7 +506,6 @@ h2.sec-title {
 .projects .image img {
   width: 100%;
   position: relative;
-  border-radius: 15px;
 }
 
 .projects .image:before {
@@ -471,8 +524,8 @@ h2.sec-title {
 
 .projects:hover .image:before {
   height: 100%;
-  background: -o-linear-gradient(236deg, rgba(31, 31, 31, 0.70) 0%, rgba(31, 31, 31, 0.00) 100%);
-  background: linear-gradient(214deg, rgba(31, 31, 31, 0.70) 0%, rgba(31, 31, 31, 0.00) 100%);
+  background: -o-linear-gradient(214deg, rgba(237, 59, 59, 0.70)  0%,rgba(237, 59, 59, 0.470)100%);
+  background: linear-gradient(214deg, rgba(237, 59, 59, 0.70)  0%,rgba(237, 59, 59, 0.470)100%);
 }
 
 .projects {
@@ -480,42 +533,53 @@ h2.sec-title {
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
   position: relative;
+  overflow: hidden;
 }
 
 .projects .content-box {
   background: var(--theme-color);
   border-radius: 5px 5px 0px 0px;
   position: absolute;
-  padding: 30px 40px;
+  padding: 10px 20px;
+  border-radius: 50%;
   bottom: 0;
-  right: 60px;
-  left: 60px;
-  opacity: 0;
+  right: 20px;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  overflow: hidden;
   z-index: 1;
-  visibility: hidden;
+  transform: translateY(50%);
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
 }
 
 .projects:hover .content-box {
-  visibility: visible;
-  opacity: 1;
+  transform: translateY(-0%);
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
+  border-radius: 0%;
 }
 
 .projects .content-box h6 {
-  font-size: 16px;
-  font-weight: 300;
-  color: var(--white-color);
-  margin-bottom: 10px;
+  font-family: 'Teko';
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
 }
 
 .projects .content-box h4 {
-  font-size: 20px;
-  font-weight: 600;
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
   color: var(--white-color);
 }
 
@@ -530,8 +594,8 @@ h2.sec-title {
   border-radius: 50%;
   font-size: 24px;
   position: absolute;
-  top: -50px;
-  right: -65px;
+  top: -90px;
+  right: 0px;
   line-height: 20px;
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
@@ -613,6 +677,135 @@ h2.sec-title {
   }
 
 /* project area end */
+
+
+
+/*--------------------------------------------------------------
+# Testimonial area
+--------------------------------------------------------------*/
+.star-icon i{
+  font-size: 25px;
+  padding: 10px;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.star-rating h2{
+  font-family: 'Teko';
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #151515;  
+}
+.bold{
+  font-family: 'Teko';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--primary-color)
+}
+.comment p{
+  font-family: 'Teko';
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color:#151515;
+}
+.pbold{
+  color: var(--primary-color);
+}
+.swiper {
+  width: 100%;      
+  position: relative;
+  height: 420px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color:  var(--primary-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--primary-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+
+.swiper-button-next{  
+  margin-top:3px!important;
+  font-size: 20px!important;
+  position: absolute;
+  left: auto!important;
+  right: 78%!important;
+  top: 5%!important;
+  padding:25px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: #fff;
+  width: 20px!important;
+  height:15px!important;
+}
+
+.swiper-button-prev{
+  margin-top:3px!important;
+  font-size: 20px!important;
+  position: absolute;
+  left: 0%!important;
+  right: auto!important;
+  top: 5%!important;
+  padding:25px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: #fff;
+  width: 20px!important;
+  height:15px!important;
+}
+
+.swiper-pagination-bullet-active{
+  background: var(--primary-color)!important;
+}
 
 /*--------------------------------------------------------------
 # Text sliding area

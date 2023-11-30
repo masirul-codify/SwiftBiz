@@ -23,6 +23,24 @@
   --primary-color:#ED3B3B;
 }
 /* Genaral */
+.container{
+  width: 75%!important;
+}
+.row-75{
+  width: 75%!important;
+}
+/* Styles for screens with a maximum width of 600 pixels */
+@media only screen and (max-width: 600px) {
+  .container{
+    width: 100%!important;
+    margin: 0 auto;
+  }
+  .row-75{
+    width: 100%!important;
+    margin: 0 auto;
+  }
+}
+
 .mt-110{
   margin-top: 110px;
 }
@@ -89,6 +107,32 @@ section{
   margin-bottom: 60px;
   color: #151515;
 }
+
+/* Styles for screens with a maximum width of 600 pixels */
+@media only screen and (max-width: 600px) {
+  .title-center p{
+    font-size: 15px;
+    line-height: 25px;
+  }
+  
+  .sub-title-center h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+  .title p{
+    font-size: 15px;
+    line-height: 25px;
+  }
+  
+  .sub-title h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+  
+}
+
 /* End Genaral */
 
 .hero-container {
@@ -138,6 +182,8 @@ section{
 .topbar {
   color: #fff;
   padding: 10px;
+  width: 75%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -164,11 +210,49 @@ section{
   
 }
 
+/* responsive code for topbar */
+
+/* Styles for screens with a maximum width of 600 pixels */
+
+@media only screen and (max-width: 767.98px) {
+  .topbar {
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+  .web-info .icon-text p{
+    font-family: 'Manrope',sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+  .web-info .icon-text h6{
+    font-family: 'Teko',sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+  }
+  
+}
+
+
+/* responsive code for topbar end*/
 /* topbar end */
 .navbar {
   background: #FFFFFF;
   color: #fff;
   padding: 10px;
+  width: 75%;
+  margin: 0 auto;
   text-align: center;
 }
 .sticky {
@@ -217,6 +301,13 @@ color: var(--primary-color);
   text-transform: uppercase;
 }
 
+/* Responsive navbar area start*/
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Responsive navbar area end*/
 /* hero content */
 .hero-content h6{
 font-family: 'Teko',sans-serif;
@@ -238,6 +329,41 @@ text-align: left;
   color: var(--primary-color);
 }
 
+/* Responsive hero content area */
+
+
+  /* Styles for screens with a maximum width of 600 pixels */
+@media only screen and (max-width: 767.98px) {
+  .hero-content {
+    position: absolute;
+    top: 65%!important;
+    left: 55%!important;
+    transform: translate(-58%,-40%);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-content h6{
+    font-family: 'Teko',sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: .7em;
+    text-align: left;
+    }
+
+    .hero-content h1{
+      font-family: 'Teko',sans-serif;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 50px;
+      letter-spacing: 0em;
+      text-align: left;  
+    }
+  
+}
+/* Responsive hero content area end*/
 /*--------------------------------------------------------------
 # Service area
 --------------------------------------------------------------*/
@@ -333,6 +459,10 @@ text-align: left;
  z-index: 11;
 }
 
+.card-contents{
+  padding: 2rem;
+}
+
 .history-pattern{
   background-image: url('../images/history/pattern.png');
   background-size: cover; 
@@ -376,9 +506,13 @@ color:#151515;
   font-size: 70px;
   color: var(--primary-color);
 }
+.content-and-icon{
+  padding: 2rem;
+}
+
 .history .content p{
   font-family: 'Manrope';
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0em;
@@ -422,6 +556,94 @@ color:#151515;
   height: 100%;
   text-align: center;
 }
+/* Styles for screens with a maximum width of 600 pixels */
+@media only screen and (max-width: 767.98px) {
+
+.card-contents{
+  padding: .5rem;
+}
+
+  .main-card{
+    margin-top: 50px!important;
+  }
+  
+  
+  .feature{
+    padding: 5px 15px!important;
+    background: linear-gradient(to right, #F2EEEC, #fff);
+  }
+
+  .feature .icon{
+   font-size: 15px;
+   color: var(--primary-color)
+  }
+  .feature .key{
+  font-family: 'Teko',sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-left: 15px;
+  color:#151515;
+  }
+  
+  .history .icon .icn i{
+    font-size: 50px;
+    color: var(--primary-color);
+  }
+
+  .content-and-icon{
+    padding: .5rem;
+  }
+
+  .history .content p{
+    font-family: 'Manrope';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  .history-counter{
+    padding-top: 350px ;
+    padding-bottom: 80px ;
+  }
+  .h-counter .icon i {
+    padding-right: 12px;
+    color: #fff;
+    font-size: 50px;
+  }
+  .h-counter .content .bold{
+    font-family: 'Teko';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+  
+  .h-counter .content .s-bold{
+    font-family: 'Teko';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #fff;
+  }
+  
+  .c-left-image{
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
 
 /*--------------------------------------------------------------
 # Growth section start
@@ -435,7 +657,9 @@ color:#151515;
   text-align: left;
   color: #ED3B3B;
 }
-
+.growth-content-header{
+  padding:2rem;
+}
 .growth-description{
   font-family: 'Manrope';
   font-size: 16px;
@@ -479,6 +703,20 @@ color:#151515;
   background: var(--primary-color);
   border-radius: 50%;
 }
+
+
+
+/* Styles for screens with a maximum width of 767.98 pixels */
+@media only screen and (max-width: 767.98px) {
+  .growth-content-header{
+    padding: .5rem;
+  }
+
+  .img-none{
+    display: none;
+  }
+}
+
 /*--------------------------------------------------------------
 # Project section start
 --------------------------------------------------------------*/
@@ -676,13 +914,49 @@ h2.sec-title {
 
 }
 
-@media only screen and (max-width: 768px){
+
+/* Styles for screens with a maximum width of 767.98 pixels */
+@media only screen and (max-width: 767.98px) {
 
   .project-section .owl-nav {
-     display: none;
-  }
+    display: none;
+ }
+
+ 
+.projects .content-box h6 {
+  font-family: 'Teko';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+.projects .content-box h4 {
+  font-family: 'Manrope';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white-color);
+}
+
+
+.projects .icon-box i {
+  top: 90px;
+}
+
+
+.projects .content-box {
+  transform: translateY(90%);
+}
+
 
 }
+
+
 
 
 @media only screen and (max-width: 425px){
@@ -830,6 +1104,28 @@ h2.sec-title {
 
 .swiper-pagination-bullet-active{
   background: var(--primary-color)!important;
+}
+
+
+@media only screen and (max-width: 767.98px){
+  .comment p{
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .star-icon i{
+    font-size: 15px;
+    padding: 10px;
+  }
+  
+  .star-rating h2{
+    font-size: 20px;
+    line-height: 30px; 
+  }
+  .swiper-button-next{  
+    left: auto!important;
+    right: 65%!important;
+  }
+  
 }
 
 /*--------------------------------------------------------------

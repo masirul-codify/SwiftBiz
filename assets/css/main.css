@@ -25,12 +25,13 @@
 /* Genaral */
 .container{
   width: 75%!important;
+  margin: 0 auto;
 }
 .row-75{
   width: 75%!important;
 }
 /* Styles for screens with a maximum width of 600 pixels */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   .container{
     width: 100%!important;
     margin: 0 auto;
@@ -38,6 +39,13 @@
   .row-75{
     width: 100%!important;
     margin: 0 auto;
+  }
+
+  .w-55{
+    width: 100%;
+  }
+  .w-45{
+    width: 100%;
   }
 }
 
@@ -247,21 +255,56 @@ section{
 
 /* responsive code for topbar end*/
 /* topbar end */
-.navbar {
-  background: #FFFFFF;
-  color: #fff;
-  padding: 10px;
-  width: 75%;
-  margin: 0 auto;
-  text-align: center;
+
+
+/* navbar  */
+.custom-navbar {
+  width: 100%;
+  transition: width 0.3s ease;
+  z-index: 9999999;
 }
-.sticky {
+.sticky-navbar {
   position: fixed;
   top: 0;
+  left: 0;
+  padding: 19px 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 9999999;
 }
+/* .sticky-navbar .navbar-dark .navbar-nav .nav-link {
+  color: red; 
+} */
 
+ .nav-link{
+  font-family: 'Manrope',sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 30px!important;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #151515; 
+  }
+  .navbar-dark .navbar-nav .nav-link:hover{
+  color: var(--primary-color);
+  }
+  .active{
+    color: var(--primary-color)!important;
+  } 
+
+
+
+  .button{
+    padding: 10px 50px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+  }
+  
 .hero-content {
   position: absolute;
   top: 60%!important;
@@ -276,36 +319,8 @@ section{
   font-size: 3em;
 }
 
-/* navbar  */
-.nav-link{
-font-family: 'Manrope',sans-serif;
-font-size: 16px;
-font-weight: 800;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
-color: #151515;
-padding-left: 30px!important;
-}
-.nav-link:hover{
-color: var(--primary-color);
-}
-.active{
-  color: var(--primary-color)!important;
-}
-.button{
-  padding: 10px 50px;
-  background: var(--primary-color);
-  color: #fff;
-  border: none;
-  text-transform: uppercase;
-}
-
 /* Responsive navbar area start*/
-.navbar {
-  width: 100%;
-  margin: 0 auto;
-}
+
 
 /* Responsive navbar area end*/
 /* hero content */
@@ -1230,6 +1245,30 @@ h2.sec-title {
       transform: translateX(100%);
   }
 }
+
+
+
+@media only screen and (max-width: 767.98px){
+
+  .red-text{
+    font-size: 50px;
+    line-height: 30px;
+  }
+  .dark-text{
+    font-size: 50px;
+    line-height: 30px;
+  }
+  
+  
+  .otto-red {
+    font-size: 50px;
+    line-height: 30px;
+  }
+  .otto {
+    font-size: 50px;
+    line-height: 30px;
+  }
+}
 /*--------------------------------------------------------------
 # Benifit area
 --------------------------------------------------------------*/
@@ -1251,6 +1290,11 @@ h2.sec-title {
 
 
 .main-container {
+  position: relative;
+  height:650px;
+}
+
+.main-container2 {
   position: relative;
   height:650px;
 }
@@ -1286,7 +1330,8 @@ h2.sec-title {
   position: absolute;  
   top: 2%;
   right: 0;
-  z-index:4;
+  width: 75%;
+  z-index:999999;
 }
 
 .benefit-icon .icon{
@@ -1315,71 +1360,52 @@ h2.sec-title {
   color: #666666;
 }
 
-/*--------------------------------------------------------------
-# Map area
---------------------------------------------------------------*/
-.map{  
-  /* background: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, 0.7)); */
-  background-size: cover; 
-  background-position: center;  
-  background-repeat: no-repeat;
-  position: absolute; 
-  top: 0; 
-  right: 0; 
-  width: 100%; 
-  height: 600px; 
-  z-index: -1; 
-  position: inherit;
-}
 
-.main-card{
-  /* position: absolute; */
-  display:  inline-block;
-  margin-top: 150px;
-}
 
-.map-card{
- position: relative;
- background: #FFFFFF;
- z-index: 11;
-}
 
-.map-pattern{
-  background-image: url('../images/map/pattern.png');
-  background-size: cover; 
-  background-position: center;  
-  background-repeat: no-repeat;
-  position: absolute; 
-  bottom: 0; 
-  left: 0; 
-  width: 70%; 
-  height: 70%; 
-  z-index: -1; 
-}
+@media only screen and (max-width: 767.98px){
 
-.feature{
-  padding: 10px 30px;
-  background: linear-gradient(to right, #F2EEEC, #fff);
-}
+  .inner-div1 {
+    top: 0px;
+    left: 0px;
+    z-index: 2; /* Set z-index to ensure it's above other elements */
+  }
 
-.map .icon .icn i{
-  font-size: 70px;
-  color: var(--primary-color);
-}
-.map .content p{
-  font-family: 'Manrope';
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 29px;
-  letter-spacing: 0em;
-  text-align: right;
-  color: #FFFFFF;
-}
+  .inner-div2 {
+    top: 650px;
+    z-index: 5;
+  }
+  
+  .main-container2 {
+    height:1250px;
+  }
 
-.map-counter{
-  padding-top: 50px ;
-}
+  .benefit-content{
+    width: 100%;
+  }
 
+  .pattern{
+    right: 70%;
+    width:100%;
+    height: 70%;
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: 575.98px){
+
+  .inner-div2 {
+    top: 480px;
+  }
+  
+  .main-container2 {
+    height:1550px;
+  }
+
+  .right-img{
+    height: 1050px;
+  }
+
+}
 /*--------------------------------------------------------------
 # Blog area
 --------------------------------------------------------------*/
@@ -1474,36 +1500,140 @@ color:#666666;
 
 
 /*--------------------------------------------------------------
-# Footer
+# Map area
 --------------------------------------------------------------*/
-.footer{
-  position: relative;
-  height: 55vh;
-  overflow: hidden;
+.map{  
+  /* background: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, 0.7)); */
+  background-size: cover; 
+  background-position: center;  
+  background-repeat: no-repeat;
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  width: 100%; 
+  height: 600px; 
+  z-index: -1; 
+  position: inherit;
 }
 
+.main-card{
+  /* position: absolute; */
+  display:  inline-block;
+  margin-top: 150px;
+}
 
-@media only screen and (max-width: 800px){
-  .footer{
-    position: relative;
-    height: 120vh;
-    overflow: hidden;
+.map-card{
+ position: relative;
+ background: #FFFFFF;
+ z-index: 11;
+}
+
+.map-pattern{
+  background-image: url('../images/map/pattern.png');
+  background-size: cover; 
+  background-position: center;  
+  background-repeat: no-repeat;
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 70%; 
+  height: 70%; 
+  z-index: -1; 
+}
+
+.feature{
+  padding: 10px 30px;
+  background: linear-gradient(to right, #F2EEEC, #fff);
+}
+
+.map .icon .icn i{
+  font-size: 70px;
+  color: var(--primary-color);
+}
+.map .content p{
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.map-counter{
+  padding-top: 50px ;
+}
+
+.c-right-image{
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+@media only screen and (max-width: 993px){
+  .map{  
+    height: 1500px; 
   }
   
 }
+@media only screen and (max-width: 768px){
+  .map{  
+    height: 1500px; 
+  }
+  .c-right-image{
+    z-index: -2;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+ .footer{
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 992px){
+  .footer{
+    position: relative;
+    height: 110vh;
+    overflow: hidden;
+  }
+
+}
+@media only screen and (max-width: 800px){
+  .footer{
+    position: relative;
+    height: 115vh;
+    overflow: hidden;
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+  .footer{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+}
 .footer .footer-area {
   background-image:  url('../images/map/map2.png');
-  /* background: linear-gradient(to right, #000, #111), url('../images/map/Map.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 50vh;
+  height: 100vh;
   width: 100%;
   position: relative;
   top: 0;
   left: 0;
   z-index: -1;  
 }
+
+
 
 .footer .footer-area .footer-info h3{
   font-family: 'Teko',sans-serif;
@@ -1541,7 +1671,7 @@ color: #fff;
 }
 .footer-links ul {
   list-style: none;
-  padding: 0; /* Optional: Remove default padding on the list */
+  padding: 0;
   }
 .footer-links ul li a{
   font-family: 'Manrope',sans-serif;
@@ -1606,8 +1736,7 @@ color: #fff;
       position: absolute;
       bottom: 0!important;
       background: #0C0C0C;
-      padding: ;
-    }
+    } 
 
 
 

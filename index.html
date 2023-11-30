@@ -48,8 +48,7 @@
         <div class="bg-image"></div>
         <div class="bg-image-1"></div>
         <div class="bg-image-2" ></div>
-        
-        <div class="">
+        <!-- ======= topbar start ======= -->
           <div id="topbar" class=" topbar d-block  py-1 text-white">
             <div class="row  g-3 info d-flex align-items-center justify-content-between">
               <div class="col-6 col-sm-4 col-md-12 col-lg-3">
@@ -86,27 +85,26 @@
               </div>
             </div>
           </div> <!--  End topbar -->
-        </div>
     
       <!-- ======= Header ======= -->
-        <div class=""  id="navbar">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div  class="container">
+          <!-- <nav id="navbar" class="navbar  navbar-expand-lg bg-body-tertiary"> -->
+           <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary custom-navbar" id="myNavbar">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <div class=""><i class="bi bi-border-width text-danger"></i></div>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      HOME   +
+                  <li class="nav-item dropdown" data-bs-hover="dropdown">
+                    <a class="nav-link active dropdown-hover" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      HOME +
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      <a class="dropdown-item" href="#">HOME 1</a>
+                      <a class="dropdown-item" href="#">HOME 2</a>
+                      <a class="dropdown-item" href="#">HOME 3</a>
+                    </div>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="about.html">ABOUT</a>
@@ -114,16 +112,15 @@
                   <li class="nav-item">
                     <a class="nav-link" href="about.html">PAGES</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      BLOG   +
+                  <li class="nav-item dropdown" data-bs-hover="dropdown">
+                    <a class="nav-link  dropdown-hover" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      BLOG +
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">BLOG 1</a>
+                      <a class="dropdown-item" href="#">BLOG 2</a>
+                      <a class="dropdown-item" href="#">BLOG 3</a>
+                    </div>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="about.html">CONTACT</a>
@@ -136,10 +133,10 @@
                 <div>
                   <button class="button my-lg-0  my-3" type="submit">GET A QUOTE <i class="bi bi-arrow-right text-white"></i></button>
                 </div>
+               </div>
               </div>
-            </div>
-          </nav>
-        </div>
+            </nav>
+          </div>
     
         <div class="hero-content row  g-3 d-block w-75 mx-auto">
           <div class="col-12 col-lg-4 col-md-12 col-sm-12 col-xl-12">
@@ -691,7 +688,7 @@
     <!-- End #Text-sliding Section -->
     <!-- ======= Benefit Section ======= -->
    <section id="benefit" class="benefit">
-      <div class="container-fluid  main-container">
+      <div class="container-fluid  main-container2">
         <div class="row ">
             <div class="inner-div1 d-inline-block col-12 col-lg-5 col-md-5 col-sm-12">
                 <div class="benefit-left ">
@@ -707,13 +704,13 @@
               </div>
             </div>
             <div class="inner-div2 col-12 col-lg-8 col-md-7 col-sm-12">
-              <div class="benefit-right">
-                <div class="image-area position-relative  overflow-hidden">
+              <div class="benefit-right overflow-hidden">
+                <div class="image-area position-relative ">
                   <img src="assets/images/benefit/benefit-rightbg.png" class="img-fluid z-0 right-img"  alt="">
                     <div class="pattern">
                       <img src="assets/images/benefit/Vector.png"  alt="">
                     </div>
-                    <div class="benefit-content w-75 pb-5">
+                    <div class="benefit-content  pb-5">
                       <div class="benefit-content-header p-5">
                         <div class="title">
                           <p>agency benefits</p>
@@ -754,7 +751,7 @@
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog mt-110">
       <div class="container">
-        <div class="row">
+        <div class="row mx-auto">
           <div class="header-area">
             <div class="title-center">
               <p>FROM THE BLOG</p>
@@ -765,7 +762,7 @@
             </div>
           </div>      <!-- Card one -->
           <div class="col-12 col-lg-4 col-md-12 col-sm-12">
-            <div class="card position-relative overflow-hidden" style="width: 22rem;">
+            <div class="card position-relative overflow-hidden mb-3   mx-auto" style="width: 22rem;">
               <img src="assets/images/blog/img1.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="blog-content p-2">
@@ -802,7 +799,7 @@
             </div>
           </div>     <!-- Card two -->
           <div class="col-12 col-lg-4 col-md-12 col-sm-12">
-            <div class="card position-relative overflow-hidden" style="width: 22rem;">
+            <div class="card position-relative overflow-hidden mb-3   mx-auto" style="width: 22rem;">
               <img src="assets/images/blog/img2.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="blog-content p-2">
@@ -839,7 +836,7 @@
             </div>
           </div>     <!-- Card three -->
           <div class="col-12 col-lg-4 col-md-12 col-sm-12">
-            <div class="card position-relative overflow-hidden" style="width: 22rem;">
+            <div class="card position-relative overflow-hidden mb-3   mx-auto" style="width: 22rem;">
               <img src="assets/images/blog/img3.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="blog-content p-2">
@@ -880,11 +877,13 @@
     </section>
     <!-- End #blog -->
     <!-- ======= Map Section ======= -->
+
+   
     <section id="map" class="mb-0">
       <div class="container-fluid gx-0">
         <div class="map-upper mx-0 map">
           <div class="row g-2  mx-auto">
-          <div class="col-12 col-lg-6 col-sm-12 col-md-4 px-3 mt-110">
+          <div class="col-12 col-lg-6 col-sm-12 col-md-12 px-3 mt-110">
             <div class="heading-area">
               <div class="title  d-flex justify-content-start px-5">
                 <p>Information</p>
@@ -930,7 +929,7 @@
 
             </div>
           </div>
-          <div class="col-12 col-lg-4 col-sm-12 col-md-12  mb-5">
+          <div class="col-12 col-lg-4 col-sm-12 col-md-6  mb-5">
             <div class="main-card ">
               <div class="card map-card " style="width: auto;">
                 <div class="map-pattern"></div>
@@ -975,8 +974,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-2 col-sm-12 col-md-12 mt-150 d-flex align-items-center justify-content-center">
-            <div class="c-left-image">
+          <div class="col-12 col-lg-2 col-sm-12 col-md-6 mt-150 d-flex align-items-center justify-content-center">
+            <div class="c-right-image img-none">
               <img src="assets/images/map/Img.png" class="img-fluid" alt="">
             </div>
           </div>
@@ -992,16 +991,18 @@
           </div>
         </div>
       </div>
-    </section>  <!-- End #map -->
+    </section> 
+    
+    <!-- End #map -->
 
 
-    <!-- ======= Blog Section ======= -->
-
-    <!-- End #blog -->
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+
+
+
+<footer id="footer" class="footer">
     <div class="container-fluid mx-auto footer-area gx-0 pt-5">
       <div class="row g-0 w-75  mx-auto">
         <div class="col-12 col-lg-5 col-md-12 footer-info">
@@ -1022,7 +1023,7 @@
           <ul>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">About</a></li>
-            <l#747474ef="#">Contact</a></li>
+            <li><a href="#">Contact</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
         </div>
@@ -1067,7 +1068,15 @@
       </div>
     </div> 
 
-  </footer><!-- End Footer -->
+  </footer>
+  
+
+  
+  
+  
+  
+  
+  <!-- End Footer -->
   <!-- End Footer -->
   <a href="" class="scroll-top" onclick="scrollToTop()"><i class="bi bi-arrow-up-short"></i></a>
   <!-- <a href="#" class="scroll-top d-flex align-items-center justify-content-end"><i class="bi bi-arrow-up-short"></i></a> -->
@@ -1141,19 +1150,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
 </script>
 
+<script>
+  // Custom JavaScript to handle the sticky navbar width change
+  window.onscroll = function() {
+    var navbar = document.getElementById('myNavbar');
+    if (window.scrollY > navbar.offsetTop) {
+      navbar.classList.add('sticky-navbar');
+      navbar.classList.remove('custom-navbar');
+    } else {
+      navbar.classList.remove('sticky-navbar');
+      navbar.classList.add('custom-navbar');
+    }
+  };
 
-  
-  <script>
-    window.addEventListener('scroll', function() {
-      var navbar = document.getElementById('navbar');
 
-      if (window.scrollY > navbar.offsetTop) {
-        navbar.classList.add('sticky');
-      } else {
-        navbar.classList.remove('sticky');
-      }
+    // Enable hover on dropdown without clicking
+    document.querySelectorAll('.nav-item.dropdown').forEach(function(dropdown) {
+      dropdown.addEventListener('mouseenter', function() {
+        if (window.innerWidth > 991) {
+          var dropdownToggle = dropdown.querySelector('.dropdown-hover');
+          if (dropdownToggle) {
+            dropdownToggle.click();
+          }
+        }
+      });
+
+      dropdown.addEventListener('mouseleave', function() {
+        if (window.innerWidth > 991) {
+          var dropdownToggle = dropdown.querySelector('.dropdown-hover');
+          if (dropdownToggle) {
+            dropdownToggle.click();
+          }
+        }
+      });
     });
-  </script>
+    
+
+
+
+
+</script>
+  
 
   
 
